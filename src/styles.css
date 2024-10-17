@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+    font-family: 'lemon';
+    src: url('/assets/fonts/lemon/Lemon-Regular.ttf');
+}
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    --color-red: rgb(255,0,0);
+    --color-dark-red: rgb(200,0,0);
+    --color-yellow: rgb(255,0214,0);
+    --color-dark-yellow: rgb(238,200,0);
+    --color-black: rgb(29,27,27);
+    --font-family: "lemon", "serif";
+    --font-size-content: 1rem;
+    --font-size-title: 2rem;
+}
+
+body {
+    background-color: var(--color-black);
+}
+
