@@ -80,13 +80,17 @@
         </p>
       </div>
       <div
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-4 row-span-6 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600"
+        class="relative bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-4 row-span-6 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600"
       >
         <img
-          src="../../../assets/images/IMG-1120.png"
+          src="../../../assets/images/file.png"
           alt="logo"
-          class="h-full object-contain  object-center p-4 rounded-xl bg-zinc-800"
+          class="absolute top-0 left-0 h-full object-contain object-center rounded-xl bg-zinc-800"
         />
+        <img src="../../../assets/images/file (1).png" alt="" class="absolute top-0 left-0 h-full object-contain object-center animate-fadeIn1 animation-delay-2s ">
+        <img src="../../../assets/images/file (2).png" alt="" class="absolute top-0 left-0 h-full object-contain object-center animate-fadeIn2 animation-delay-2s ">
+        <img src="../../../assets/images/file (3).png" alt="" class="absolute top-0 left-0 h-full object-contain object-center animate-fadeIn3 animation-delay-2s ">
+        <img src="../../../assets/images/file (4).png" alt="" class="absolute top-0 left-0 h-full object-contain object-center origin-baton animate-twirl animation-delay-1s" id="baton">
       </div>
       <div
         class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-3 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600"
@@ -191,6 +195,7 @@
       >
         <div
           class="h-full rounded-xl bg-zinc-800 flex justify-center items-center"
+          (click)="animate()"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -11,4 +11,10 @@ import { RouterLink } from '@angular/router';
 })
 export class HomeComponent {
 
+
+
+  animate(){
+    const baton = document.getElementById('baton')
+    baton?.classList.add('animate-baton')
+  }
 }
