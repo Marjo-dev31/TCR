@@ -19,6 +19,9 @@ module.exports = {
       animation: {
         blob: "blob 7s linear infinite",
       },
+      backgroundImage: {
+        hero: "url('../src/assets/images/IMG-1120.png')"
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
