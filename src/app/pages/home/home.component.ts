@@ -22,12 +22,14 @@ export class HomeComponent {
     if (this.openDefinition()) {
       definitionElement?.classList.add('rotate-180');
       definitionElement?.classList.add('-translate-x-full');
+      definitionElement?.classList.add('-translate-y-1/2');
       questionElement?.classList.add('opacity-0');
       defElement?.classList.remove('opacity-0');
       defElement?.classList.add('animate-fadeIn1');
     }
     if (!this.openDefinition()) {
       definitionElement?.classList.remove('rotate-180');
+      definitionElement?.classList.remove('-translate-y-1/2');
       definitionElement?.classList.remove('-translate-x-full');
       questionElement?.classList.remove('opacity-0');
       defElement?.classList.add('opacity-0');
