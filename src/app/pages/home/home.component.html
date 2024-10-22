@@ -12,28 +12,32 @@
       ></div>
     </div>
     <div
-      class="max-w-6xl grid grid-cols-10 grid-rows-10 gap-4 relative [perspective:1000px]"
+      class="max-w-6xl grid grid-cols-10 grid-rows-10 gap-4 [perspective:1000px]"
     >
       <div
         class="relative bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-7 [backface-visibility:hidden] hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 duration-1000 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)] z-10"
       >
         <div class="absolute inset-0 m-0.5">
           <div
-            class="h-full p-4 rounded-xl bg-zinc-800 content-center text-center hover:bg-gradient-to-br hover:from-zinc-700 hover:to-zinc-800 "
+            class="h-full p-4 rounded-xl bg-zinc-800 content-center text-center hover:bg-gradient-to-br hover:from-zinc-700 hover:to-zinc-800"
           >
             <p class="text-5xl p-4">40 ans</p>
-            <p class="text-xl">Depuis plus de 40ans, le Twirling
-            Club Rieumois est affilié à la Fédération Française Sportive de
-            Twirling bâton...</p>
-            
+            <p class="text-xl">
+              Depuis plus de 40ans, le Twirling Club Rieumois est affilié à la
+              Fédération Française Sportive de Twirling bâton...
+            </p>
+          </div>
         </div>
-        </div>
-        <div class="h-full absolute inset-0 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-          <p class="h-full p-4 rounded-xl content-center bg-zinc-800 text-center text-lg border-2 border-red-600 scale-125 ">
-            Depuis plus de <span class="">40 ans</span>, le Twirling
-            Club Rieumois est affilié à la Fédération Française Sportive de
-            Twirling bâton. Le club forme des athlètes à partir de 4 ans, fille ou garçon, au sein des sections loisir,
-            compétition ou handi-sport.
+        <div
+          class="h-full absolute inset-0 [transform:rotateY(180deg)] [backface-visibility:hidden]"
+        >
+          <p
+            class="h-full p-4 rounded-xl content-center bg-zinc-800 text-center text-lg border-2 border-red-600 scale-125"
+          >
+            Depuis plus de <span class="">40 ans</span>, le Twirling Club
+            Rieumois est affilié à la Fédération Française Sportive de Twirling
+            bâton. Le club forme des athlètes à partir de 4 ans, fille ou
+            garçon, au sein des sections loisir, compétition ou handi-sport.
           </p>
         </div>
       </div>
@@ -70,7 +74,8 @@
           <p class="p-1">Documentation</p>
         </div>
       </div>
-      <div [routerLink]="['/press']" 
+      <div
+        [routerLink]="['/press']"
         class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600"
       >
         <p
@@ -80,17 +85,36 @@
         </p>
       </div>
       <div
-        class="relative bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-4 row-span-6 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600"
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-4 row-span-6 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600"
       >
-        <img
-          src="../../../assets/images/file.png"
-          alt="logo"
-          class="absolute top-0 left-0 h-full object-contain object-center rounded-xl bg-zinc-800 "
-        />
-        <img src="../../../assets/images/file (1).png" alt="" class="absolute top-0 left-0 h-full object-contain object-center animate-fadeIn1 animation-delay-2s ">
-        <img src="../../../assets/images/file (2).png" alt="" class="absolute top-0 left-0 h-full object-contain object-center animate-fadeIn2 animation-delay-2s ">
-        <img src="../../../assets/images/file (3).png" alt="" class="absolute top-0 left-0 h-full object-contain object-center animate-fadeIn3 animation-delay-2s ">
-        <img src="../../../assets/images/file (4).png" alt="" class="absolute top-0 left-0 h-full object-contain object-center origin-baton animate-twirl animation-delay-1s" id="baton">
+        <div class="relative h-full w-full">
+          <img
+            src="../../../assets/images/file.png"
+            alt="logo"
+            class="absolute top-0 left-0 h-full object-contain object-center rounded-xl bg-zinc-800"
+          />
+          <img
+            src="../../../assets/images/file (1).png"
+            alt=""
+            class="absolute top-0 left-0 h-full object-contain object-center animate-fadeIn1 animation-delay-2s"
+          />
+          <img
+            src="../../../assets/images/file (2).png"
+            alt=""
+            class="absolute top-0 left-0 h-full object-contain object-center animate-fadeIn2 animation-delay-2s"
+          />
+          <img
+            src="../../../assets/images/file (3).png"
+            alt=""
+            class="absolute top-0 left-0 h-full object-contain object-center animate-fadeIn3 animation-delay-2s"
+          />
+          <img
+            src="../../../assets/images/file (4).png"
+            alt=""
+            class="absolute top-0 left-0 h-full object-contain object-center origin-baton animate-twirl animation-delay-1s"
+            id="baton"
+          />
+        </div>
       </div>
       <div
         class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-3 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600"
@@ -117,15 +141,25 @@
         </div>
       </div>
       <div
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-5 text-center text-red-600 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600"
+        class="relative bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-5 text-center text-red-600 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 duration-1000"
+        (click)="animate()"
+        id="definition"
       >
-        <div
-          class="h-full rounded-xl bg-zinc-800 content-center hover:bg-gradient-to-br hover:from-zinc-700 hover:to-zinc-800"
+        <div id="question"
+          class="absolute inset-0 m-0.5 rounded-xl bg-zinc-800 content-center hover:bg-gradient-to-br hover:from-zinc-700 hover:to-zinc-800"
         >
           <p class="text-4xl p-2">Twirling</p>
           <p>/'twɝ:.lɪŋ/</p>
           <p class="text-3xl p-2">Késako ?</p>
           <p>(Qu'est-ce-que c'est ?)</p>
+        </div>
+        <div class="absolute inset-0 opacity-0 rotate-180" id="def">
+          <p class="h-full p-4 rounded-xl content-center bg-zinc-800 text-center text-lg text-amber-300 border-2 border-red-600">
+            Le twirling est une discipline sportive qui allie la gymnastique,
+            la manipulation du bâton mais aussi la danse et la théatralité.
+            C'est une discipline complète de part son côté technique et son côté
+            artistique. C'est un sport et un spectable à la fois !
+          </p>
         </div>
       </div>
       <div

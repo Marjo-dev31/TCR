@@ -37,7 +37,7 @@ module.exports = {
         twirl: "twirl 1.5s linear",
         fadeIn1: "fadeIn1 1s ease-in",
         fadeIn2: "fadeIn2 2s ease-in",
-        fadeIn3: "fadeIn3 3s ease-in"
+        fadeIn3: "fadeIn3 3s ease-in",
       },
       backgroundImage: {
         hero: "url('../src/assets/images/IMG-1120.png')"
