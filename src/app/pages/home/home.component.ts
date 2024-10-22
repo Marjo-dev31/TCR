@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { AnimationDirective } from '../../shared/directives/animation.directive';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, AnimationDirective],
   providers: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
