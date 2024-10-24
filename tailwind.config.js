@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     fontFamily: {
       lemon: ["lemon", "sans-serif"],
+      roboto:["roboto", "sans-serif"],
     },
     extend: {
       keyframes: {
