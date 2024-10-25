@@ -29,6 +29,6 @@ export const routes: Routes = [
     ],
   },
   { path: 'team', component: TeamComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'sponsor', component: SponsorComponent },
   { path: '*', component: HomeComponent },
 ];
