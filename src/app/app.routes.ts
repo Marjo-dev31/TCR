@@ -9,6 +9,8 @@ import { CompetitionComponent } from './pages/competition/competition.component'
 import { CalendarComponent } from './pages/competition/calendar/calendar.component';
 import { BaremesComponent } from './pages/competition/baremes/baremes.component';
 import { ResultsComponent } from './pages/competition/results/results.component';
+import { TeamComponent } from './pages/team/team.component';
+import { SponsorComponent } from './pages/sponsor/sponsor.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,4 +28,7 @@ export const routes: Routes = [
       { path: 'results', component: ResultsComponent },
     ],
   },
+  { path: 'team', component: TeamComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: '*', component: HomeComponent },
 ];
