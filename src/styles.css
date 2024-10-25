@@ -4,27 +4,30 @@
 @tailwind utilities;
 
 @layer base {
-    @font-face {
-    font-family: 'lemon';
-    src: url('/assets/fonts/lemon/Lemon-Regular.ttf');
-}
+  @font-face {
+    font-family: "lemon";
+    src: url("/assets/fonts/lemon/Lemon-Regular.ttf");
+  }
+  @font-face {
+    font-family: "hind";
+    src: url("/assets/fonts/Hind_Madurai/HindMadurai-Regular.ttf");
+  }
 }
 
 @layer utilities {
-    .animation-delay-1s{
-        animation-delay: 500ms;
-    }
-    .animation-delay-2s {
-        animation-delay: 2000ms;
-    }
-    .animation-delay-3s {
-        animation-delay: 3000ms;
-    }
-    .animation-delay-4s {
-        animation-delay: 4000ms;
-    }
+  .animation-delay-1s {
+    animation-delay: 500ms;
+  }
+  .animation-delay-2s {
+    animation-delay: 2000ms;
+  }
+  .animation-delay-3s {
+    animation-delay: 3000ms;
+  }
+  .animation-delay-4s {
+    animation-delay: 4000ms;
+  }
 }
-
 
 /* * {
     box-sizing: border-box;
@@ -46,4 +49,3 @@ html {
 body {
     background-color: var(--color-black);
 } */
-

@@ -1,7 +1,7 @@
-<nav>
-    <ul class="flex justify-evenly backdrop-blur-sm bg-white/20 p-4">
-        <li><a [routerLink]="['calendar']" routerLinkActive="router-link-active" >Calendrier</a></li>
-        <li><a [routerLink]="['baremes']">Baremes</a></li>
-        <li><a [routerLink]="['results']">Résultats</a></li>
+<nav class="font-bold tracking-wider">
+    <ul class="flex justify-evenly items-center bg-yellow-100 text-zinc-800 p-4">
+        <li class="hover:bg-gradient-to-br hover:from-zinc-500 hover:to-zinc-800 hover:text-yellow-300 p-2 px-4 rounded-2xl"[routerLink]="['calendar']">Calendrier</li>
+        <li class="hover:bg-gradient-to-br hover:from-zinc-500 hover:to-zinc-800 hover:text-yellow-300 p-2 px-4 rounded-2xl"[routerLink]="['baremes']">Barèmes</li>
+        <li class="hover:bg-gradient-to-br hover:from-zinc-500 hover:to-zinc-800 hover:text-yellow-300 p-2 px-4 rounded-2xl"[routerLink]="['results']">Résultats</li>
     </ul>
 </nav>
