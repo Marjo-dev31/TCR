@@ -2,24 +2,24 @@
   <div class="relative flex flex-col items-center justify-center my-10">
     <div class="w-full max-w-xl">
       <div
-        class="absolute top-2 left-1/4 rounded-full bg-yellow-300 w-96 h-96 blur-3xl opacity-70 animate-blob"
+        class="absolute top-2 left-1/4 rounded-full bg-yellow-300 w-60 h-60 md:w-96 md:h-96 blur-3xl opacity-70 animate-blob"
       ></div>
       <div
-        class="absolute top-4 right-1/4 rounded-full bg-red-600 w-96 h-96 blur-3xl opacity-70 animate-blob animation-delay-2s"
+        class="absolute top-4 right-1/4 rounded-full bg-red-600 w-60 h-60 md:w-96 md:h-96 blur-3xl opacity-70 animate-blob animation-delay-2s"
       ></div>
       <div
-        class="absolute bottom-6 left-1/3 rounded-full bg-orange-500 w-96 h-96 blur-3xl opacity-70 animate-blob animation-delay-4s"
+        class="absolute bottom-6 left-1/3 rounded-full bg-orange-500 w-60 h-60 md:w-96 md:h-96 blur-3xl opacity-70 animate-blob animation-delay-4s"
       ></div>
     </div>
     <div
-      class="max-w-6xl grid grid-cols-10 grid-rows-10 gap-4 [perspective:1000px]"
+      class="max-w-72 md:max-w-6xl grid grid-cols-1 grid-rows-12 md:grid-cols-10 md:grid-rows-10 gap-4 [perspective:1000px]"
     >
       <div
-        class="relative bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-7 [backface-visibility:hidden] hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)] hover:duration-1000 z-10 animate-fadeIn6"
+        class="relative bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl  md:col-span-3 md:row-span-7 [backface-visibility:hidden] hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)] hover:duration-1000 z-10 animate-fadeIn6"
       >
         <div class="absolute inset-0 m-0.5">
           <div
-            class="h-full p-4 rounded-xl bg-gray-900 content-center text-center hover:bg-gradient-to-br hover:from-zinc-700 hover:to-gray-900"
+            class="h-full p-4 rounded-xl bg-gray-900 content-center text-center hover:bg-gradient-to-br hover:from-zinc-700 hover:to-gray-900 "
           >
             <p class="text-6xl p-4 font-bold">40 ans</p>
             <p class="text-xl">
@@ -29,10 +29,10 @@
           </div>
         </div>
         <div
-          class="h-full absolute inset-0 [transform:rotateY(180deg)] [backface-visibility:hidden]"
+          class="h-full absolute inset-0 [transform:rotateY(180deg)] [backface-visibility:hidden] "
         >
           <p
-            class="h-full p-4 rounded-xl content-center bg-gray-900 text-center text-lg border-2 border-red-600 scale-125 text-balance"
+            class="md:h-full p-4 rounded-xl content-center bg-gray-900 text-center text-lg border-2 border-red-600 md:scale-125 text-balance"
           >
             Depuis plus de 40 ans, le Twirling Club Rieumois est affilié à la
             Fédération Française Sportive de Twirling bâton. Le club forme des
@@ -45,7 +45,7 @@
       </div>
       <div
         [routerLink]="['/practice']"
-        class="animate-fadeIn4 bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-2 row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer"
+        class="animate-fadeIn4 bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-2 md:row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer"
       >
         <p
           class="text-center text-xl font-bold  text-red-600 text-wrap bg-gray-900 h-full rounded-xl content-center hover:bg-gradient-to-br hover:from-zinc-700 hover:to-gray-900"
@@ -54,7 +54,7 @@
         </p>
       </div>
       <div [routerLink]="['/documentation']"
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-2 row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn4"
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-2 md:row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn4"
       >
         <div
           class="h-full bg-gray-900 rounded-xl flex flex-col justify-center items-center hover:bg-gradient-to-br hover:from-zinc-700 hover:to-gray-900"
@@ -79,7 +79,7 @@
       </div>
       <div
         [routerLink]="['/press']"
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn7"
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-3 md:row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn7"
       >
         <p
           class="text-center text-red-600 text-xl font-bold  h-full rounded-xl bg-gray-900 content-center hover:bg-gradient-to-br hover:from-zinc-700 hover:to-gray-900"
@@ -88,7 +88,7 @@
         </p>
       </div>
       <div
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-4 row-span-6"
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl row-start-1 md:col-span-4 md:row-span-6 "
       >
         <div class="relative h-full w-full">
           <img
@@ -120,7 +120,7 @@
         </div>
       </div>
       <div
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-3 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn7"
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-3 md:row-span-3 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn7"
         [routerLink]="['/competition']"
       >
         <div
@@ -145,7 +145,7 @@
         </div>
       </div>
       <div
-        class="relative bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-5 text-center text-red-600 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn7"
+        class="relative bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-3 md:row-span-5 text-center text-red-600 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn7"
         appAnimation
         (click)="animate()"
         id="definition"
@@ -171,7 +171,7 @@
         </div>
       </div>
       <div
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn6" 
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-3 md:row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn6" 
         [routerLink]="['/contact']"
       >
         <div
@@ -196,7 +196,7 @@
         </div>
       </div>
       <div
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-1 row-span-2 content-center hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 animate-fadeIn5"
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-1 md:row-span-2 content-center hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 animate-fadeIn5"
       >
         <a href="https://fftwirl.fr/" class=""
           ><img
@@ -206,7 +206,7 @@
         /></a>
       </div>
       <div
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn5"
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-3 md:row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn5"
       >
         <div
           class="text-center h-full rounded-xl bg-gray-900 flex flex-col justify-center items-center hover:bg-gradient-to-br hover:from-zinc-700 hover:to-gray-900"
@@ -235,7 +235,7 @@
         </div>
       </div>
       <div
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-1 row-span-1 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 animate-fadeIn6"
+        class="hidden md:block bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-1 md:row-span-1 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 animate-fadeIn6"
       >
         <div
           class="h-full rounded-xl bg-gray-900 flex justify-center items-center"
@@ -257,7 +257,7 @@
         </div>
       </div>
       <div
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-2 row-span-1 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 animate-fadeIn6"
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-2 md:row-span-1 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 animate-fadeIn6"
       >
         <a href="https://www.facebook.com/twirlingrieumes/">
           <div
