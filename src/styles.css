@@ -12,6 +12,10 @@
     font-family: "hind";
     src: url("/assets/fonts/Hind_Madurai/HindMadurai-Regular.ttf");
   }
+  @font-face {
+    font-family: "futura";
+    src: url("/assets/fonts/futura/FuturaPTCondMedium.otf");
+  }
 }
 
 @layer utilities {

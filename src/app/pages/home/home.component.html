@@ -15,7 +15,7 @@
       class="max-w-6xl grid grid-cols-10 grid-rows-10 gap-4 [perspective:1000px]"
     >
       <div
-        class="relative bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-7 [backface-visibility:hidden] hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 duration-1000 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)] z-10"
+        class="relative bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-7 [backface-visibility:hidden] hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)] hover:duration-1000 z-10 animate-fadeIn6"
       >
         <div class="absolute inset-0 m-0.5">
           <div
@@ -32,31 +32,33 @@
           class="h-full absolute inset-0 [transform:rotateY(180deg)] [backface-visibility:hidden]"
         >
           <p
-            class="h-full p-4 rounded-xl content-center bg-gray-900 text-center text-lg border-2 border-red-600 scale-125"
+            class="h-full p-4 rounded-xl content-center bg-gray-900 text-center text-lg border-2 border-red-600 scale-125 text-balance"
           >
             Depuis plus de 40 ans, le Twirling Club Rieumois est affilié à la
             Fédération Française Sportive de Twirling bâton. Le club forme des
             athlètes à partir de 4 ans, fille ou garçon, au sein des sections
-            loisir, compétition ou handi-sport.
+            loisir, compétition ou handi-sport, en solo, duo ou équipes. Au fil
+            des saisons, notre priorité est le partage, la solidarité, la
+            tolérance et le bien vivre ensemble.
           </p>
         </div>
       </div>
       <div
         [routerLink]="['/practice']"
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-2 row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600"
+        class="animate-fadeIn4 bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-2 row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer"
       >
         <p
-          class="text-center text-xl font-bold tracking-wider text-red-600 text-wrap bg-gray-900 h-full rounded-xl content-center hover:bg-gradient-to-br hover:from-zinc-700 hover:to-gray-900"
+          class="text-center text-xl font-bold  text-red-600 text-wrap bg-gray-900 h-full rounded-xl content-center hover:bg-gradient-to-br hover:from-zinc-700 hover:to-gray-900"
         >
           Nos entraînements
         </p>
       </div>
-      <div
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-2 row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600"
+      <div [routerLink]="['/documentation']"
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-2 row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn4"
       >
         <div
           class="h-full bg-gray-900 rounded-xl flex flex-col justify-center items-center hover:bg-gradient-to-br hover:from-zinc-700 hover:to-gray-900"
-          [routerLink]="['/documentation']"
+          
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -72,15 +74,15 @@
               d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"
             />
           </svg>
-          <p class="font-bold tracking-wider">Documentation</p>
+          <p class="font-bold ">Documentation</p>
         </div>
       </div>
       <div
         [routerLink]="['/press']"
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600"
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn7"
       >
         <p
-          class="text-center text-red-600 text-xl font-bold tracking-wider h-full rounded-xl bg-gray-900 content-center hover:bg-gradient-to-br hover:from-zinc-700 hover:to-gray-900"
+          class="text-center text-red-600 text-xl font-bold  h-full rounded-xl bg-gray-900 content-center hover:bg-gradient-to-br hover:from-zinc-700 hover:to-gray-900"
         >
           On parle de nous dans la presse
         </p>
@@ -97,28 +99,28 @@
           <img
             src="../../../assets/images/file (1).png"
             alt=""
-            class="absolute top-0 left-0 h-full object-contain object-center animate-fadeIn1 animation-delay-2s"
+            class="absolute top-0 left-0 h-full object-contain object-center animate-fadeIn1"
           />
           <img
             src="../../../assets/images/file (2).png"
             alt=""
-            class="absolute top-0 left-0 h-full object-contain object-center animate-fadeIn2 animation-delay-2s"
+            class="absolute top-0 left-0 h-full object-contain object-center animate-fadeIn2"
           />
           <img
             src="../../../assets/images/file (3).png"
             alt=""
-            class="absolute top-0 left-0 h-full object-contain object-center animate-fadeIn3 animation-delay-2s"
+            class="absolute top-0 left-0 h-full object-contain object-center animate-fadeIn3"
           />
           <img
             src="../../../assets/images/file (4).png"
             alt=""
-            class="absolute top-0 left-0 h-full object-contain object-center origin-baton animate-twirl animation-delay-1s"
+            class="absolute top-0 left-0 h-full object-contain object-center origin-baton animate-twirl delay-500"
             id="baton"
           />
         </div>
       </div>
       <div
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-3 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600"
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-3 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn7"
         [routerLink]="['/competition']"
       >
         <div
@@ -139,25 +141,15 @@
             />
           </svg>
 
-          <p class="font-bold tracking-wider">Compétitions</p>
+          <p class="font-bold ">Compétitions</p>
         </div>
       </div>
       <div
-        class="relative bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-5 text-center text-red-600 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 duration-1000"
+        class="relative bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-5 text-center text-red-600 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn7"
         appAnimation
         (click)="animate()"
         id="definition"
       >
-        <div
-          id="question"
-          class="absolute inset-0 m-0.5 rounded-xl bg-gray-900 content-center"
-        >
-          <p class="text-5xl p-2 font-bold tracking-wider">TWIRLING</p>
-          <p>/'twɝ:.lɪŋ/</p>
-          <p class="text-4xl p-2">Késako ?</p>
-          <p>(Qu'est-ce-que c'est ?)</p>
-        </div>
-
         <div class="absolute inset-0 opacity-0 rotate-180" id="def">
           <p
             class="h-full p-4 rounded-xl content-center bg-yellow-300 text-center text-lg text-gray-900 border-2 border-red-600"
@@ -168,9 +160,18 @@
             artistique. C'est un sport et un spectable à la fois !
           </p>
         </div>
+        <div
+          id="question"
+          class="absolute inset-0 m-0.5 rounded-xl bg-gray-900 content-center hover:bg-gradient-to-br hover:from-zinc-700 hover:to-gray-900"
+        >
+          <p class="text-5xl p-2 font-bold ">TWIRLING</p>
+          <p>/'twɝ:.lɪŋ/</p>
+          <p class="text-4xl p-2">Késako ?</p>
+          <p>(Qu'est-ce-que c'est ?)</p>
+        </div>
       </div>
       <div
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600"
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn6" 
         [routerLink]="['/contact']"
       >
         <div
@@ -191,11 +192,11 @@
             />
           </svg>
 
-          <p class="font-bold tracking-wider">Contact</p>
+          <p class="font-bold ">Contact</p>
         </div>
       </div>
       <div
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-1 row-span-2 content-center hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600"
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-1 row-span-2 content-center hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 animate-fadeIn5"
       >
         <a href="https://fftwirl.fr/" class=""
           ><img
@@ -205,7 +206,7 @@
         /></a>
       </div>
       <div
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600"
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-3 row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn5"
       >
         <div
           class="text-center h-full rounded-xl bg-gray-900 flex flex-col justify-center items-center hover:bg-gradient-to-br hover:from-zinc-700 hover:to-gray-900"
@@ -230,16 +231,16 @@
               d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z"
             />
           </svg>
-          <p class="font-bold tracking-wider">Galerie Photo</p>
+          <p class="font-bold ">Galerie Photo</p>
         </div>
       </div>
       <div
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-1 row-span-1 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600"
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-1 row-span-1 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 animate-fadeIn6"
       >
         <div
           class="h-full rounded-xl bg-gray-900 flex justify-center items-center"
         >
-          <svg
+          <!-- <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -252,11 +253,11 @@
               stroke-linejoin="round"
               d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
             />
-          </svg>
+          </svg> -->
         </div>
       </div>
       <div
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-2 row-span-1 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600"
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-2 row-span-1 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 animate-fadeIn6"
       >
         <a href="https://www.facebook.com/twirlingrieumes/">
           <div

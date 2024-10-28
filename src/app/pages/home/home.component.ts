@@ -23,6 +23,7 @@ export class HomeComponent {
       definitionElement?.classList.add('rotate-180');
       definitionElement?.classList.add('-translate-x-full');
       definitionElement?.classList.add('-translate-y-1/2');
+      definitionElement?.classList.add('duration-1000');
       questionElement?.classList.add('opacity-0');
       defElement?.classList.remove('opacity-0');
       defElement?.classList.add('animate-fadeIn1');
