@@ -15,7 +15,8 @@
       class="max-w-72 md:max-w-6xl grid grid-cols-1 grid-rows-12 md:grid-cols-10 md:grid-rows-10 gap-4 [perspective:1000px]"
     >
       <div
-        class="relative bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl  md:col-span-3 md:row-span-7 [backface-visibility:hidden] hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)] hover:duration-1000 z-10 animate-fadeIn6"
+        class="relative bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl  md:col-span-3 md:row-span-7 [backface-visibility:hidden] hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)] hover:duration-1000 z-10"
+        [ngClass]="{'animate-fadeIn6': triggerAnimationSignal()}"
       >
         <div class="absolute inset-0 m-0.5">
           <div
@@ -45,8 +46,8 @@
       </div>
       <div
         [routerLink]="['/practice']"
-        class="animate-fadeIn4 bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-2 md:row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer"
-      >
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-2 md:row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer"
+        [ngClass]="{'animate-fadeIn4': triggerAnimationSignal()}">
         <p
           class="text-center text-xl font-bold  text-red-600 text-wrap bg-gray-900 h-full rounded-xl content-center hover:bg-gradient-to-br hover:from-zinc-700 hover:to-gray-900"
         >
@@ -54,8 +55,8 @@
         </p>
       </div>
       <div [routerLink]="['/documentation']"
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-2 md:row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn4"
-      >
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-2 md:row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer"
+        [ngClass]="{'animate-fadeIn4': triggerAnimationSignal()}">
         <div
           class="h-full bg-gray-900 rounded-xl flex flex-col justify-center items-center hover:bg-gradient-to-br hover:from-zinc-700 hover:to-gray-900"
           
@@ -79,7 +80,8 @@
       </div>
       <div
         [routerLink]="['/press']"
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-3 md:row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn7"
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-3 md:row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer"
+        [ngClass]="{'animate-fadeIn7': triggerAnimationSignal()}"
       >
         <p
           class="text-center text-red-600 text-xl font-bold  h-full rounded-xl bg-gray-900 content-center hover:bg-gradient-to-br hover:from-zinc-700 hover:to-gray-900"
@@ -99,28 +101,33 @@
           <img
             src="../../../assets/images/file (1).png"
             alt=""
-            class="absolute top-0 left-0 h-full object-contain object-center animate-fadeIn1"
+            class="absolute top-0 left-0 h-full object-contain object-center"
+            [ngClass]="{'animate-fadeIn1': triggerAnimationSignal()}"
           />
           <img
             src="../../../assets/images/file (2).png"
             alt=""
-            class="absolute top-0 left-0 h-full object-contain object-center animate-fadeIn2"
+            class="absolute top-0 left-0 h-full object-contain object-center"
+            [ngClass]="{'animate-fadeIn2': triggerAnimationSignal()}"
           />
           <img
             src="../../../assets/images/file (3).png"
             alt=""
-            class="absolute top-0 left-0 h-full object-contain object-center animate-fadeIn3"
+            class="absolute top-0 left-0 h-full object-contain object-center"
+            [ngClass]="{'animate-fadeIn3': triggerAnimationSignal()}"
           />
           <img
             src="../../../assets/images/file (4).png"
             alt=""
-            class="absolute top-0 left-0 h-full object-contain object-center origin-baton animate-twirl delay-500"
+            class="absolute top-0 left-0 h-full object-contain object-center origin-baton delay-500"
+            [ngClass]="{'animate-twirl': triggerAnimationSignal()}"
             id="baton"
           />
         </div>
       </div>
       <div
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-3 md:row-span-3 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn7"
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-3 md:row-span-3 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer"
+        [ngClass]="{'animate-fadeIn7': triggerAnimationSignal()}"
         [routerLink]="['/competition']"
       >
         <div
@@ -145,7 +152,8 @@
         </div>
       </div>
       <div
-        class="relative bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-3 md:row-span-5 text-center text-red-600 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn7"
+        class="relative bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-3 md:row-span-5 text-center text-red-600 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer"
+        [ngClass]="{'animate-fadeIn7': triggerAnimationSignal()}"
         appAnimation
         (click)="animate()"
         id="definition"
@@ -171,7 +179,8 @@
         </div>
       </div>
       <div
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-3 md:row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn6" 
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-3 md:row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer"
+        [ngClass]="{'animate-fadeIn6': triggerAnimationSignal()}" 
         [routerLink]="['/contact']"
       >
         <div
@@ -196,7 +205,8 @@
         </div>
       </div>
       <div
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-1 md:row-span-2 content-center hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 animate-fadeIn5"
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-1 md:row-span-2 content-center hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600"
+        [ngClass]="{'animate-fadeIn5': triggerAnimationSignal()}"
       >
         <a href="https://fftwirl.fr/" class=""
           ><img
@@ -206,7 +216,8 @@
         /></a>
       </div>
       <div
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-3 md:row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer animate-fadeIn5"
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-3 md:row-span-2 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 hover:cursor-pointer"
+        [ngClass]="{'animate-fadeIn5': triggerAnimationSignal()}"
       >
         <div
           class="text-center h-full rounded-xl bg-gray-900 flex flex-col justify-center items-center hover:bg-gradient-to-br hover:from-zinc-700 hover:to-gray-900"
@@ -235,7 +246,8 @@
         </div>
       </div>
       <div
-        class="hidden md:block bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-1 md:row-span-1 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 animate-fadeIn6"
+        class="hidden md:block bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl col-span-1 md:row-span-1 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600"
+        [ngClass]="{'animate-fadeIn6': triggerAnimationSignal()}"
       >
         <div
           class="h-full rounded-xl bg-gray-900 flex justify-center items-center"
@@ -257,7 +269,8 @@
         </div>
       </div>
       <div
-        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-2 md:row-span-1 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600 animate-fadeIn6"
+        class="bg-gradient-to-r from-red-600 via-orange-500 to-yellow-300 p-0.5 rounded-xl md:col-span-2 md:row-span-1 hover:bg-gradient-to-br hover:from-yellow-300 hover:to-red-600"
+        [ngClass]="{'animate-fadeIn6': triggerAnimationSignal()}"
       >
         <a href="https://www.facebook.com/twirlingrieumes/">
           <div
