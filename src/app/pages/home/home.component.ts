@@ -1,16 +1,23 @@
-import { Component, signal } from '@angular/core';
+import { AfterViewInit, Component, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { AnimationDirective } from '../../shared/directives/animation.directive';
+import { TriggerAnimationService } from '../../../services/trigger-animation.service';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink, AnimationDirective],
+  imports: [RouterLink, AnimationDirective, NgClass],
   providers: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
-export class HomeComponent {
+export class HomeComponent implements AfterViewInit {
+
+  public readonly triggerAnimationService = inject(TriggerAnimationService)
+
+  triggerAnimationSignal = this.triggerAnimationService.firstTrigger
+
   openDefinition = signal(false);
 
   mediaQuery = window.matchMedia("(min-width: 768px)")
@@ -41,5 +48,11 @@ export class HomeComponent {
       defElement?.classList.add('opacity-0');
       defElement?.classList.remove('animate-fadeIn1');
     }
+  }
+
+  ngAfterViewInit(): void {
+    setTimeout(()=>{
+      this.triggerAnimationService.setFirstTrigger()
+    },4000)
   }
 }

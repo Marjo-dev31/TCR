@@ -9,7 +9,7 @@ export class AnimationDirective {
 
   @HostListener('click', ['$event'])
   onClick($event: any) {
-    console.log('clicked' + $event);
+    // console.log('clicked' + $event);
 
   }
 
