@@ -2,6 +2,7 @@ const { transform } = require("typescript");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: ["./src/**/*.{html,ts}"],
   theme: {
     fontFamily: {

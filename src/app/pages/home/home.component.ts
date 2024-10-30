@@ -51,8 +51,6 @@ export class HomeComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    console.log('toto', this.triggerAnimationSignal())
-
     setTimeout(()=>{
       this.triggerAnimationService.setFirstTrigger()
     },4000)
