@@ -21,7 +21,6 @@ export class AppComponent {
   toggleDarkModeService = inject(ToggleDarkModeService)
 
   @HostBinding('class.dark') get mode(){
-    console.log(this.toggleDarkModeService.isDarkMode())
     return this.toggleDarkModeService.isDarkMode()
   }
 }

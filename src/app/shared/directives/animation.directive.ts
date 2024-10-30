@@ -1,4 +1,4 @@
-import { Directive, Host, HostListener, signal } from '@angular/core';
+import { Directive, HostListener, signal } from '@angular/core';
 
 @Directive({
   selector: '[appAnimation]',
@@ -9,7 +9,7 @@ export class AnimationDirective {
 
   @HostListener('click', ['$event'])
   onClick($event: any) {
-    console.log('clicked' + $event);
+    // console.log('clicked' + $event);
 
   }
 
