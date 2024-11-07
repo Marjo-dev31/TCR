@@ -9,6 +9,7 @@ module.exports = {
       lemon: ["lemon", "sans-serif"],
       roboto: ["roboto", "sans-serif"],
       hind: ["hind", "sans-serif"],
+      futura: ["futura", "sans-serif"],
     },
     extend: {
       keyframes: {
