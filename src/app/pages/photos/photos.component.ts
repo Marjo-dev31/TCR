@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './photos.component.css'
 })
 export class PhotosComponent {
+photos: Array<string> = ["1","2","3","4","5","6","7","8","9","10","11"].reverse()
+route = "../../../assets/images/galery/"
+
+// getPhotos() { 
+// const array = 
+// this.photos = array
+// }
 
 }
